@@ -21,7 +21,7 @@ int main() {
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n");
-		printf("\t0 - Encerrar programa\n \n");
+		printf("\t4 - Sair do sistema\n \n");
 		printf("Opção: ");
 
         // Recebendo informação do usuário
@@ -40,14 +40,16 @@ int main() {
 			case 3:
 			    deletar();
             break;
-			case 0:
-			    printf("obrigado por usar o programa.\n");
+			case 4:
+			    printf("obrigado por usar o sistema.\n");
+			    return 0;
             break;
-			default: printf("Essa opção não está disponível!\n");
+			default: 
+				printf("Essa opção não está disponível!\n");
 		} //fim da seleção
 		system("pause");
 		system("cls");
-	} while(opcao != 0);
+	} while(opcao != 4);
 
 	return 0;
 }
